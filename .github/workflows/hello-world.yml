@@ -6,7 +6,7 @@
 
  on:
 
- 	# Allows you to run this workflow manually from the Actions tab
+ # Allows you to run this workflow manually from the Actions tab
 
  	workflow_dispatch:
 
@@ -14,30 +14,30 @@
 
  jobs:
 
- 	# This workflow contains a single job called "build"
+ # This workflow contains a single job called "build"
 
- 	build:
+ build:
 
- 		# The type of runner that the job will run on
+  # The type of runner that the job will run on
 
- 		runs-on: self-hosted
+  runs-on: self-hosted
 
- 		# Steps represent a sequence of tasks that will be executed as part of the job
+  # Steps represent a sequence of tasks that will be executed as part of the job
 
- 		steps:
+  steps:
 
- 			# Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+   # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
 
- 			- uses: actions/checkout@v2
+   - uses: actions/checkout@v2
 
- 			# Runs a single command using the runners shell
+   # Runs a single command using the runners shell
 
- 			- name: Run a one-line script
+   - name: Run a one-line script
 
- 			run: echo Hello, world!
+   run: echo Hello, world!
 
- 			# Runs docker hello-world
+   # Runs docker hello-world
 
- 			- name: Hello from Docker
+   - name: Hello from Docker
 
- 			run: docker run hello-world
+   run: docker run hello-world
